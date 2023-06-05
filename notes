@@ -1,0 +1,25 @@
+Access Specifier : 
+		4 
+				1) Public : Multiple Package 
+				2) Default : Same Package
+				3) Private : Outside Class not accessible
+				4) Protected : Child class only can access
+
+Multiple Classes (2 class)
+	=> .Java Files
+	=> .Class Files 
+	
+Main Method Multiple Possible
+Operators: 
+		1) Arithmetic + - / % * 
+		2) Relational : > < >= <= 
+		3) Conditional : && || !
+		4) Turnery  : (? :)
+		 (condition)?(statement):(falsestatement)
+		5) Increment/Decre : ++ --  
+		6) Bitwise :  & ^ | 
+		
+Oops: 
+	Encapsulation : 
+		Wrapping Of Data 
+					
