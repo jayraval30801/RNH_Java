@@ -24,9 +24,11 @@ class Customer
 	}
 
 }
-public class EncapDemo {
+public class EncapDemo 
+{
 
-		public static void main(String[] args) {
+		public static void main(String[] args)
+		{
 			int a;
 			Scanner sc  =  new Scanner(System.in);
 			Customer obj = new Customer();
@@ -40,3 +42,13 @@ public class EncapDemo {
 			System.out.println("Your First Name is"+obj.firstName);
 		}
 }
+/*
+ * Shape Class => radius , int length , width  => private variables 
+ * 
+ * 	=> ReactArea  
+ *  => Square Area 
+ *  => Triengle Area
+ *  => Circle Area
+ * 
+ * 
+ * */
