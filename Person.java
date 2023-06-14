@@ -3,8 +3,8 @@ package VijapurJava;
 import java.util.Scanner;
 
 public class Person {
-		String name;
-		int age;	
+	String name;
+	int age;
 		public static void main(String[] args) 
 		{
 			int i;
@@ -15,7 +15,9 @@ public class Person {
 			
 //			int a[] = {1,2,2,3,3}; // Array Declaration
 //			int a[] = new int[SIZE];
- 						
+ 			System.out.println("Enter Name of Person You Want Data of");
+ 			String fname = sc.next();
+ 			sc.nextLine();
 			Person obj[] = new Person[count];
 			for(i=0;i<count;i++)
 			{
@@ -28,10 +30,23 @@ public class Person {
 			}
 			for(i=0;i<count;i++)
 			{
-				System.out.println("Person "+(i+1)+":");
-				System.out.println("name : "+obj[i].name);
-				System.out.println("age : "+obj[i].age);
-				System.out.println();
+				if(fname.equals(obj[i].name)) 
+				{
+					System.out.println("Your Data has been found");
+					System.out.println("Name is"+obj[i].name);
+					System.out.println("Age is"+obj[i].age);
+				}
 			}
   		}
+		
 }
+
+/*
+ * Patients Class : 
+ * 		Variable : pid , name , disease , adharno 
+ * 		Multiple Patients => Specifiec Patient Find  
+ * 
+ * 
+ * 
+ * 
+ */
