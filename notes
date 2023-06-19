@@ -43,8 +43,33 @@ Overloading :
 		
 		=> Class => Bank => Searching 
 				=> Array :  		
-	
-	
-	
+inheritence : 
+		multilevel 
+		single
+		Hierarchical Inheri	
+
+How many objects are eligible for garbage collection right before the end of the main
+method?
+
+  public class Person 
+  {
+   public Person youngestChild; 
+   public static void main(String... args) 
+   {
+   	 Person elena = new Person(); 
+     Person diana = new Person();
+   	 elena.youngestChild = diana;
+  	 diana = null;
+   	 Person zoe = new Person();
+   	 elena.youngestChild = zoe;
+   	 zoe = null;
+   }
+  }
+A. None
+B. One => Diana
+C. Two
+D. Three
+
+
 	
 					
