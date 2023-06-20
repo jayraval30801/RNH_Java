@@ -48,28 +48,203 @@ inheritence :
 		single
 		Hierarchical Inheri	
 
-How many objects are eligible for garbage collection right before the end of the main
-method?
+Which of the following is not a valid order for elements in a class?
 
-  public class Person 
-  {
-   public Person youngestChild; 
-   public static void main(String... args) 
-   {
-   	 Person elena = new Person(); 
-     Person diana = new Person();
-   	 elena.youngestChild = diana;
-  	 diana = null;
-   	 Person zoe = new Person();
-   	 elena.youngestChild = zoe;
-   	 zoe = null;
-   }
-  }
-A. None
-B. One => Diana
-C. Two
-D. Three
+A. Constructor, instance variables, method names
+B. Instance variables, constructor, method names
+C. Method names, instance variables, constructor
+D. None of the above: all orders are valid.
 
+========================================================================
+package beach;
+public class Sand 
+{
+	public Sand() 
+	{
+		System.out.print("a");
+	}
+public void Sand() 
+	{
+		System.out.print("b");
+	}
+public void run() 
+{
+	new Sand();
+	Sand();
+}
+public static void main(String... args) 
+{
+	new Sand().run();
+}
+}
 
-	
-					
+A. a
+B. ab
+C. aab
+D. None of the above
+======================================================================================
+package registration;
+public class NameCheck 
+{
+public static void main(String... data) 
+{
+	String john = "john";
+	String jon = new String(john);
+	System.out.print((john==jon)+" "+(john.equals(jon)));
+}
+}
+A. true true
+B. true false
+C. false true
+D. false false
+==============================================================================================
+package planning;
+public class ThePlan
+ {
+public static void main(String[] input) 
+{
+	int plan = 1;
+	plan = plan++ + --plan;
+	if(plan==1) 
+	{
+		System.out.print("Plan A");
+	} 
+	else
+	{ 
+		if(plan==2) 
+			System.out.print("Plan B");
+	} 
+	else
+		 System.out.print("Plan C");
+	}
+}
+A. Plan A
+B. Plan B
+C. Plan C
+D. None of the above
+==================================================================================
+package dinosaur;
+public class Park 
+{
+public final static void main(String... arguments) 
+	{
+	int pterodactyl = 6;
+	long triceratops = 3;
+	if(pterodactyl % 3 >= 1) // 6%3 => 0>=1
+		triceratops++;
+		triceratops--;
+	System.out.print(triceratops);
+	}
+}
+A. 2
+B. 3
+C. 4
+D. The code does not compile
+=========================================================================================	
+package restaurant;
+public class Pieces {
+public static void main(String[] info) {
+int flair = 15;
+if(flair >= 15 && flair < 37)
+ {
+	System.out.print("Not enough");
+ }
+ if(flair==37) 
+	{
+		System.out.print("Just right");
+	}
+	 else
+	 {	
+		System.out.print("Too many");
+	 }
+}
+}
+A. Not enough
+B. Just right
+C. Too many
+D. None of the above					
+==========================================================================================
+Which statement about case statements of a switch statement is not true?
+A. A case value can be final.
+B. A case statement must be terminated with a break statement.
+C. A case value can be a literal expression.
+D. A case value must match the data type of the switch variable, or be able to be
+promoted to that type.
+=============================================================================================
+Given the following truth table, which operator for the boolean expressions x and y
+corresponds to this relationship?
+          x = true x = false
+y = true   true     false
+y = false  false    false
+ A. --
+ B. ++
+ C. ||
+ D. && => 
+===========================================================================================
+package jungle;
+public class TheBigRace
+ {
+public static void main(String[] in) 
+{
+int tiger = 2;
+short lion = 3;
+long winner = lion+2*(tiger + lion);
+System.out.print(winner);
+}
+}
+A. 11
+B. 13 => 
+C. 25
+D. None of the above
+======================================================================================
+int time = 11;
+int day = 4;
+String dinner = time > 10 ? day ? "Takeout" : "Salad" : "Leftovers";
+A. Takeout
+B. Salad
+C. The code does not compile but would compile if parentheses were added.
+D. None of the above =>
+=====================================================================================
+package recreation;
+public class Dancing 
+{
+public static void main(String[] vars) 
+{
+int leaders = 10 * (2 + (1 + 2 / 5);
+int followers = leaders * 2;
+System.out.print((leaders + followers)< 10 ? "Too few" : "Too many");
+}
+}
+A. Too few
+B. Too many
+C. The code does not compile.=>
+D. The code compiles but throws a division by zero error at runtime
+======================================================================================
+package schedule;
+public class PrintWeek {
+public static final void main(String[] days) {
+System.out.print(5 + 6 + "7" + 8 + 9);
+}
+}
+A. 56789
+B. 11789
+C. 11717 =>
+D. The code does not compile.
+========================================================================
+package transporter;
+public class Rematerialize {
+public static void main(String[] input) 
+{
+int dog = 11;
+int cat = 3;
+int partA = dog / cat;
+int partB = dog % cat;
+int newDog = partB + partA * cat;
+System.out.print(newDog);
+}
+}
+A. 9
+B. 11 =>
+C. 15
+D. The code does not compile.
+=======================================================================

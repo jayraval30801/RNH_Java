@@ -15,8 +15,8 @@ public class Person {
 			
 //			int a[] = {1,2,2,3,3}; // Array Declaration
 //			int a[] = new int[SIZE];
- 			System.out.println("Enter Name of Person You Want Data of");
- 			String fname = sc.next();
+// 			System.out.println("Enter Name of Person You Want Data of");
+// 			String fname = sc.next();
  			sc.nextLine();
 			Person obj[] = new Person[count];
 			for(i=0;i<count;i++)
@@ -28,14 +28,18 @@ public class Person {
 				obj[i].age = sc.nextInt();
 				sc.nextLine();
 			}
-			for(i=0;i<count;i++)
+//			for(i=0;i<count;i++)
+//			{
+//				if(fname.equals(obj[i].name)) 
+//				{
+//					System.out.println("Your Data has been found");
+//					System.out.println("Name is"+obj[i].name);
+//					System.out.println("Age is"+obj[i].age);
+//				}
+//			}
+			for(Person x : obj)
 			{
-				if(fname.equals(obj[i].name)) 
-				{
-					System.out.println("Your Data has been found");
-					System.out.println("Name is"+obj[i].name);
-					System.out.println("Age is"+obj[i].age);
-				}
+				System.out.println(""+x.age+""+x.name);
 			}
   		}
 		
