@@ -39,9 +39,13 @@ package VijapurJava;
  * 			final method : Method Final =>can not Override 
  * 			final class : can not Inherit 
  * 
+ * anagram => ? 
  * 
- * 
- * 
- * 
+ * 	Program : 
+ * 		1-d Array : => {1,2,3}
+ * 	Another Array : {1,2,3,4} => not anagram
+ *  Array : {3,1,2} 
+ *  		=> Anagram 
+ *  
  * 
  * */
