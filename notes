@@ -248,8 +248,24 @@ B. 11 =>
 C. 15
 D. The code does not compile.
 =======================================================================
-Super Keyword : 
+Super Keyword 
+Aggregation : 
 	
-Aggregation
+		class => array 
+			
+				main method 
+					child class obj = new child(a[],SIZE); => Para constructor => Logic Ascending Order
+					Super(a[],SIZE) => Parent Constructor => Searching Logic	
 
-
+===================================================================================
+Abstraction : 
+		Hiding of Data and Showing only Functionality 
+		Hotel : 
+				Menu : Dishes 
+				Recipe :  Chef Manager 
+abstract class : 
+		class abstract keyword use 
+		abstract methods and Non abstract methods 
+		Variable can not be abstract 
+interface  : 
+		only abstract method 
