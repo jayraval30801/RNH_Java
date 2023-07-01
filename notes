@@ -269,3 +269,131 @@ abstract class :
 		Variable can not be abstract 
 interface  : 
 		only abstract method 
+========================================================================================
+3. What is the output of the following application?
+package stocks;
+public class Bond
+{
+private static int price = 5;
+public boolean sell() 
+{
+if(price<10) 
+{
+	price++;
+	return true;
+} 
+else if(price>=10) 
+{
+	return false;
+}
+		
+}
+public static void main(String[] cash) {
+new Bond().sell();
+new Bond().sell();
+new Bond().sell();
+System.out.print(price);
+}
+}
+A. 5
+B. 6
+C. 8
+D. The code does not compile.		----
+-================================================================================
+What is the output of the following application?
+package pet;
+public class Puppy
+ {
+public static int wag = 5; // q1
+public void Puppy(int wag) { // q2
+this.wag = wag;
+}
+public static void main(String[] tail) {
+System.out.print(new Puppy(2).wag); // q3
+}
+}
+A. 2
+B. It does not compile because of line q1.
+C. It does not compile because of line q2.
+D. It does not compile because of line q3. ---
+======================================================================================
+package ship;
+public class Phone {
+private int size;
+public Phone(int size) {this.size=size;}
+public static void sendHome(Phone p, int newSize) {
+p = new Phone(newSize);
+p.size = 4;
+}
+public static final void main(String... params) {
+final Phone phone = new Phone(3);
+sendHome(phone,7);
+System.out.print(phone.size);
+}
+}
+A. 3 --
+B. 4
+C. 7
+D. The code does not compile
+=========================================================================================
+4. How many final modifiers would need to be removed for this application to compile?
+package park;
+public class Tree {
+public final static long numberOfTrees;
+public final double height;
+static {}
+{ final int initHeight = 2;
+height = initHeight;
+}
+static {
+numberOfTrees = 100;
+height = 4;
+}
+}
+A. None
+B. One
+C. Two
+D. The code will not compile regardless of the number of final modifiers removed. --
+====================================================================================
+What is the output of the following application?
+package jungle;
+public class RainForest extends Forest 
+{
+public RainForest(long treeCount) 
+{
+	this.treeCount = treeCount+1;
+}
+public static void main(String[] birds)
+{
+	System.out.print(new RainForest(5).treeCount);
+}
+}
+class Forest 
+{
+public long treeCount;
+public Forest(long treeCount) 
+{
+	this.treeCount = treeCount+2;
+}
+}
+A. 5
+B. 6
+C. 8
+D. The code does not compile. ----
+======================================================================================
+public class ChooseWisely {
+public ChooseWisely() { super(); }
+public int choose(int choice) { return 5; }
+public int choose(short choice) { return 2; } // -32677 to 32678
+public int choose(long choice) { return 11; }
+public static void main(String[] path) {
+System.out.print(new ChooseWisely().choose((byte)2+1));
+}
+}
+A. 5 --
+B. 2
+C. 11
+D. The code does not compile
+======================================================================================
+
+

@@ -4,6 +4,15 @@ class Bike
 {
 	int m;
 	String n;
+	static 
+	{
+		
+		
+	}
+	static
+	{
+		
+	}
 		Bike()
 		{
 			this(12,"Interceptor 650");

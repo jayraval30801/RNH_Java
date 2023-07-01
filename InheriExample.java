@@ -6,7 +6,7 @@ class Pub
 	private int c=14;
 	Pub()
 	{
-		System.out.println("Pub default Cons");
+		System.out.println();
 	}
 	Pub(int a,int b)
 	{
