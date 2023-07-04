@@ -395,5 +395,15 @@ B. 2
 C. 11
 D. The code does not compile
 ======================================================================================
-
+abstraction :
+interface : 
+		multiple inheritence : multiple parents and only one child 
+		only abtract method
+		int a=12; => compiler => public static 	final int a = 12;	
+		void print(); => compiler => public abstract void print();
+		
+child class =>parent class => extends 
+child class => parent interface => implements 
+child interface => parent interface => extends 
+child interface => parent class => not possible
 
